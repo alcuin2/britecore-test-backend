@@ -1,9 +1,0 @@
-{
-    "dev": {
-        "django_settings": "src.config.settings",
-        "profile_name": null,
-        "project_name": "test",
-        "runtime": "python3.8",
-        "s3_bucket": "zappa-ahmjwkbmz"
-    }
-}
