@@ -33,7 +33,7 @@ class RiskField(models.Model):
     field_name = models.CharField(max_length=50)
     field_type = models.CharField(max_length=10, choices=FIELD_TYPES)
     enum_constants = models.CharField(max_length=256, blank=True)
-    description = models.TextField(default="")
+    description = models.TextField(default="", blank=True)
 
     def describe(self):
         description = dict()
@@ -61,7 +61,7 @@ class RiskType(models.Model):
     insurer = models.ForeignKey(Insurer, on_delete=models.DO_NOTHING,)
     insurer_name = models.CharField(max_length=50, blank=True)
     risk_name = models.CharField(max_length=50)
-    description = models.TextField(default="")
+    description = models.TextField(default="", blank=True)
 
     def describe(self):
         fields = RiskField.objects.filter(risk_type=self.uid)
