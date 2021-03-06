@@ -33,9 +33,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "z&7@k6)!6f&4-dl$p!7s-(t==e3zx6cqy90lmlyjx#6@29!a@@"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "drf_yasg",
+    "corsheaders",
     "insurer.apps.InsurerConfig",
 ]
 
