@@ -6,6 +6,7 @@ Deployed with `Zappa`. Settings at `src/zappa_settings.json`.
 
 ## Dependencies
 - Python 3.8.x
+- Django Rest Framework 0.1.0
 - Django 3.7.7 see `requirements.txt` for more
 
 ## Deliverables
@@ -172,6 +173,8 @@ Deployed with `Zappa`. Settings at `src/zappa_settings.json`.
         ```
 
         Creating risk fields can also be done at the frontend.
+
+        Other endpoints corresponding to HTTP REST verbs of `PUT` (update) and `DELETE` (delete) also available.
 
     - Tests
     Tests are run locally using the standard `Django` testing methodology. Run
