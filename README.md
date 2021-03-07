@@ -13,6 +13,7 @@ Deployed with `Zappa`. Settings at `src/zappa_settings.json`.
 **Data**
 - ORM class file at `src/insurer/models.py`
 - Entity Relationship Diagram 
+    ![alt erd image](erd.png "Entity relationship diagram")
 
 **Backend**
 - APIs
@@ -139,7 +140,7 @@ Deployed with `Zappa`. Settings at `src/zappa_settings.json`.
         }
         ```
 
-        #### Create a Risk Field for an Risk Type
+        #### Create a Risk Field for a Risk Type
 
         Send `POST` request with data
         ```
