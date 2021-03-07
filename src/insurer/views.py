@@ -20,13 +20,6 @@ class RiskTypeViewSet(viewsets.ModelViewSet):
     queryset = RiskType.objects.all()
     serializer_class = RiskTypeSerializer
 
-    def list(self, request, *args, **kwargs):
-        queryset = self.filter_queryset(self.queryset)
-        result = list()
-        for obj in queryset:
-            result.append(obj.describe())
-        return Response(result)
-
     def retrieve(self, request, *args, **kwargs):
         instance = self.get_object()
         fields = RiskField.objects.filter(risk_type=instance.uid)
