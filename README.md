@@ -181,6 +181,7 @@ Deployed with `Zappa`. Settings at `src/zappa_settings.json`.
 
 The frontend app is live at [https://britecore-test-frontend.herokuapp.com/](https://britecore-test-frontend.herokuapp.com/)
 
-Developed with `VueJS` and deploy on `Heroku` served by `express`
+GitHub repo at [https://github.com/alcuin2/britecore-test-frontend](https://github.com/alcuin2/britecore-test-frontend)
 
+Developed with `VueJS` and deploy on `Heroku` served by `express`
 
